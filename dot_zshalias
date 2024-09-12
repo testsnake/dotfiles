@@ -1,5 +1,5 @@
 alias neofetch="pokeget sylveon --hide-name | fastfetch --file-raw -"
 alias neofetch2="pokeget sylveon --hide-name | fastfetch -c ~/.config/fastfetch/config2.jsonc --file-raw -"
 alias github="cd ~/Documents/GitHub"
-alias yeet='yay -Rcu'
+alias yeet='yay -Rs'
 alias FUCK='sudo $(fc -ln -1)'
