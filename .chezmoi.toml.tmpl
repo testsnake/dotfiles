@@ -4,4 +4,4 @@
     email = {{ $email | quote }}
 
 [[hooks.post.update]]
-    command = 'test "$(chezmoi diff ~/.config/fish/fish_plugins)" != "" && fisher update && sh ~/.config/sync.sh || true'
+    command = 'fisher update && sh ~/.config/sync.sh || true'
