@@ -1,3 +1,3 @@
 fisher update
 
-sh fish/configure_tide.sh
+fish ~/.config/fish/configure_tide.sh
