@@ -3,9 +3,5 @@
 [data]
     email = {{ $email | quote }}
 
-[git]
-    autoCommit = true
-    autoPush = true
-
 [[hooks.post.update]]
     command = 'test "$(chezmoi diff ~/.config/fish/fish_plugins)" != "" && fisher update || true'
