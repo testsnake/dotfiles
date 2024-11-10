@@ -4,4 +4,4 @@
     email = {{ $email | quote }}
 
 [[hooks.post.update]]
-    command = 'fisher update && sh ~/.config/sync.sh || true'
+    command = 'sh ~/.config/sync.sh'
