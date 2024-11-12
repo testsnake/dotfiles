@@ -103,7 +103,8 @@
             "blurAmount": 10
         },
         "CallTimer": {
-            "enabled": true
+            "enabled": true,
+            "format": "stopwatch"
         },
         "ClearURLs": {
             "enabled": false
@@ -534,7 +535,10 @@
             "enabled": false
         },
         "TypingIndicator": {
-            "enabled": true
+            "enabled": true,
+            "includeMutedChannels": false,
+            "includeCurrentChannel": true,
+            "indicatorMode": 3
         },
         "TypingTweaks": {
             "enabled": false
@@ -629,7 +633,7 @@
             "enabled": false
         },
         "VolumeBooster": {
-            "enabled": false
+            "enabled": true
         },
         "FullSearchContext": {
             "enabled": false
@@ -660,6 +664,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1731208773085
+        "settingsSyncVersion": 1731383762900
     }
 }
