@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 # Fish?
 if command -v fish >/dev/null 2>&1; then
   # Fisher?
