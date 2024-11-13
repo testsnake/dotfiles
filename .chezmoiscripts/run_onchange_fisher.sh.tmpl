@@ -1,10 +1,12 @@
 #!/bin/sh
 
+# {{ include "private_dot_config/private_fish/fish_plugins" | sha256sum }}
+
 # Fish?
 if command -v fish >/dev/null 2>&1; then
   # Fisher?
   if fish -c "type fisher" >/dev/null 2>&1; then
-    fish ~/.config/sync.fish && echo "-- Sync Complete --" || echo "-- Error when syncing --"
+    fish -c "fisher update 2>&1 >/dev/null"
   else
     # No fisher
     echo "Error: Fisher is not installed. https://github.com/jorgebucaran/fisher" >&2

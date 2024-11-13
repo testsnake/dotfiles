@@ -2,24 +2,24 @@
 
 # Main programs I use on every desktop
 
-pacman -S \
+# Official repo
+yay -S --needed --noconfirm \
     firefox \
     fish \
     fisher \
     gimp \
-    github-desktop-bin \
     handbrake \
     obs-studio \
     signal-desktop \
     steam \
     timeshift \
-    ungoogled-chromium-bin \
-    vesktop \
-    visutal-studio-code-bin \
+    torbrowser-launcher \
     wine \
     zellij
 
-
-
-
-
+# AUR packages, do not bypass with noconfirm
+yay -S --needed \
+    github-desktop-bin \
+    ungoogled-chromium-bin \
+    vesktop-bin \
+    visutal-studio-code-bin
