@@ -7,7 +7,7 @@ read -r response
 
 if [ "$response" != "y" ]; then
     echo "Installation cancelled."
-    exit 1
+    exit 0
 fi
 
 # Official repo
