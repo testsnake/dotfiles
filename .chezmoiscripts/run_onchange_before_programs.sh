@@ -20,6 +20,7 @@ yay -S --needed --noconfirm \
 # AUR packages, do not bypass with noconfirm
 yay -S --needed \
     github-desktop-bin \
+    qdirstat-bin \
     ungoogled-chromium-bin \
     vesktop-bin \
     visutal-studio-code-bin
