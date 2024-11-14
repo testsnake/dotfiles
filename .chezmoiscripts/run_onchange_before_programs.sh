@@ -2,6 +2,14 @@
 
 # Main programs I use on every desktop
 
+echo "Install script has changed, would you like to update and install [y/n]"
+read -r response
+
+if [ "$response" != "y" ]; then
+    echo "Installation cancelled."
+    exit 1
+fi
+
 # Official repo
 yay -S --needed --noconfirm \
     firefox \
