@@ -12,3 +12,10 @@ if status is-interactive
     # Enable thefuck
     thefuck --alias | source
 end
+
+# pnpm
+set -gx PNPM_HOME "/home/emmamb/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
